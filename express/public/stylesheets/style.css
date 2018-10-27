@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+.input-div:not(:last-child) {
+  margin-bottom: 10px;
+}
