@@ -5,7 +5,7 @@ var router = express.Router()
 router.get('/', function (req, res, next) {
   res.render('index', {
     title: 'Public Thage API',
-    text: 'This is the root of the Thage API.\nYou need to register for an API Key in order to get data from the API.',
+    text: 'This is the root of the Thage API. You need to register for an API Key in order to get data from the API.',
     button_text: 'Get your API Key'
   })
 })
