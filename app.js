@@ -19,8 +19,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-var base = '/server'
-
 app.use(base + '/', indexRouter)
 app.use(base + '/users', usersRouter)
 
