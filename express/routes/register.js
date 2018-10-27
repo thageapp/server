@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 })
 
 /* GET registered page. */
-router.get('/registered', function (req, res, next) {
+router.post('/registered', function (req, res, next) {
   res.render('registered', {
     title: 'Public Thage API registration',
     text: 'Your request is on its way and it will be reviewed by one member of our team.\nIf your application is accepted we\'ll send you a confirmation email.',
