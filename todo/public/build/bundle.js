@@ -10241,7 +10241,7 @@ module.exports = defaults;
     addTodo(event) {
       if (event) event.preventDefault();
 
-      let url = 'http://localhost:4000/api/add';
+      let url = 'https://thage.me/todo/api/add';
       let param = {
         name: this.todo,
         done: 0
@@ -10831,7 +10831,7 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
         fetchTodo() {
 
-            let uri = 'http://localhost:4000/api/all';
+            let uri = 'https://thage.me/todo/api/all';
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(uri).then(response => {
 
@@ -10843,7 +10843,7 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
             let id = todo._id;
 
-            let uri = 'http://localhost:4000/api/update/' + id;
+            let uri = 'https://thage.me/todo/api/update/' + id;
 
             todo.editing = false;
 
@@ -10858,7 +10858,7 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
         deleteTodo(id) {
 
-            let uri = 'http://localhost:4000/api/delete/' + id;
+            let uri = 'https://thage.me/todo/api/delete/' + id;
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(uri);
 
